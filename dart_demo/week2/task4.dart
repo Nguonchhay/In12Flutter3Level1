@@ -25,6 +25,7 @@ void main() {
   while (j <= num) {
     sumWhile += j;
     j++;
+
   }
   print("Result: $sumWhile");
 
