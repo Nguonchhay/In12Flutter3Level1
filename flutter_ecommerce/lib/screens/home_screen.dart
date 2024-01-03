@@ -18,6 +18,15 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
         backgroundColor: Colors.cyan,
+        actions: [
+          IconButton(
+            onPressed: () {
+              // Check if user already logged in, go to CartScreen else go to LoginScreen
+              Navigator.of(context).pushNamed(LoginScreen.routeName);
+            }, 
+            icon: const Icon(Icons.shop),
+          ),
+        ],
       ),
       body: SingleChildScrollView(
         child: Container(
