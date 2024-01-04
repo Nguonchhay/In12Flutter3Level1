@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_ecommerce/screens/home_screen.dart';
 import 'package:flutter_ecommerce/screens/sign_up_screen.dart';
 
@@ -86,6 +87,13 @@ class _LoginScreenState extends State<LoginScreen> {
                     );
                   }
                 },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.redAccent,
+                  foregroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius:  BorderRadius.circular(5.0),
+                  ),
+                ),
                 child: const Text('Log In'),
               ),
             ),
@@ -93,6 +101,33 @@ class _LoginScreenState extends State<LoginScreen> {
               width: double.infinity,
               padding: const EdgeInsets.symmetric(vertical: 15.0, horizontal: 35.0),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  CircleAvatar(
+                    backgroundColor: Colors.blue,
+                    foregroundColor: Colors.white,
+                    child: IconButton(
+                      onPressed: () {}, 
+                      icon: const FaIcon(FontAwesomeIcons.facebookF),
+                    ),
+                  ),
+                  const SizedBox(width: 15.0,),
+                  CircleAvatar(
+                    backgroundColor: Colors.redAccent,
+                    foregroundColor: Colors.white,
+                    child: IconButton(
+                      onPressed: () {}, 
+                      icon: const FaIcon(FontAwesomeIcons.googlePlusG),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.symmetric(vertical: 15.0, horizontal: 35.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text(
                     'Do not have an account?'

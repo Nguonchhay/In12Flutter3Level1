@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_ecommerce/screens/login_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -24,7 +25,7 @@ class HomeScreen extends StatelessWidget {
               // Check if user already logged in, go to CartScreen else go to LoginScreen
               Navigator.of(context).pushNamed(LoginScreen.routeName);
             }, 
-            icon: const Icon(Icons.shop),
+            icon: const FaIcon(FontAwesomeIcons.cartShopping),
           ),
         ],
       ),
