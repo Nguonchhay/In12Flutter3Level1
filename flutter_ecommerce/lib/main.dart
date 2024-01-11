@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/screens/home_screen.dart';
 import 'package:flutter_ecommerce/screens/login_screen.dart';
+import 'package:flutter_ecommerce/screens/products_screen.dart';
 import 'package:flutter_ecommerce/screens/sign_up_screen.dart';
 import 'package:flutter_ecommerce/screens/splash_screen.dart';
 
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         HomeScreen.routeName: (ctx) => const HomeScreen(),
         LoginScreen.routeName: (ctx) => const LoginScreen(),
         SignUpScreen.routeName: (ctx) => const SignUpScreen(),
+        ProductsScreen.routeName: (ctx) => const ProductsScreen(),
       },
     );
   }
